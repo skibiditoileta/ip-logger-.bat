@@ -6,4 +6,4 @@
 ### 3. send it to someone.
 ### 4.get their ip address
 
-made with chatgpt :)
+if you don't have a webhook yet, click [here](https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html)
