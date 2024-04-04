@@ -5,3 +5,5 @@
 2.replace *your webhook here* with your webhook.
 3. send it to someone.
 4.get their ip address
+
+made with chatgpt :)
