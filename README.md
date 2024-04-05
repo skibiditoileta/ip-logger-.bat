@@ -1,5 +1,5 @@
 # simple batch ip logger
-# steals oublic ip, private ip, pc name, username, UUID(HWID) and a screenshot.
+# steals public ip, private ip, pc name, username, UUID(HWID) and a screenshot.
 ## how to use?
 ### 1.download the repo and extract.
 ### 2.edit the file: replace 'your webhook here' with your webhook.
