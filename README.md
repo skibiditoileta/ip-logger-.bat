@@ -7,3 +7,4 @@
 ### 4.get their ip address.
 
 if you don't have a webhook yet, click [here](https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html)
+(powered by [chatGPT](https://chat.openai.com))
