@@ -22,7 +22,7 @@ a simple batch file that sends the victim's ip to a webhook via curl
 ### <p align="center">⭐ Features ⭐</p>
 
 <br><br>
-<strong>+ steals public and private ip, pc username, pc name, and a screenshot</strong>
+<strong>+ steals public and ipv4 and v6, pc username, pc name, and a screenshot</strong>
 <br>
 <strong>+ easy to customize</strong>
 <br>
